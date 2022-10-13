@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+  </head>
+  <body>
+    <!-- Combinators Css -->
+    <h2>Combinators-</h2>
+    <p>combinator is explains the relationship between the selectors</p>
+    <ul>
+      <li>descendant selector (space)</li>
+      <li>child selector (>)</li>
+      <li>adjacent sibling selector (+)</li>
+      <li>general sibling selector (~)</li>
+    </ul>
+    <!-- Descendant -->
+    <h2>Descendant Selector -</h2>
+    <p>
+      descendant selector matches all elements that are descendants of a
+      specified element.
+    </p>
+    <!-- Ex-descendant -->
+    <h5>Ex- -</h5>
+    <div class="descendant">
+      <p>Paragraph 1 in the div.</p>
+      <div>
+        <p>Paragraph 2 in the div.</p>
+      </div>
+    </div>
+    <p>Paragraph 3 Not in a div.</p>
+
+    <!-- child -->
+    <h2>Child Selector (>) -</h2>
+    <p>
+      child selector selects all elements that are the children of a specified
+      element.
+    </p>
+    <!--Ex-child -->
+    <h5>Ex- -</h5>
+    <div class="child">
+      <p>Paragraph 1 in the div.</p>
+      <div>
+        <!-- not Child of div but <p> is Descendant -->
+        <p>Paragraph 2 in the div.</p>
+      </div>
+      <p>Paragraph 3 in the div.</p>
+    </div>
+    <p>Paragraph 4 Not in a div.</p>
+
+    <!-- Adjacent Sibling Selector (+) -->
+    <h2>Adjacent Sibling Selector (+) -</h2>
+    <p>
+      + selector is used to select an element that is directly after another
+      specific element.
+    </p>
+    <!-- Ex-Adjacent Sibling -->
+    <h5>Ex- -</h5>
+    <div class="Adjacent">
+      <p>Paragraph 1 in the div.</p>
+    </div>
+    <p>Paragraph 2 After a div.</p>
+    <p>Paragraph 3 After a div.</p>
+    <div class="Adjacent">
+      <p>Paragraph 4 in the div.</p>
+    </div>
+    <p>Paragraph 5 After a div.</p>
+
+    <!--General Sibling Selector (~) -->
+    <h2>General Sibling Selector (~) -</h2>
+    <p>
+      sibling selector (~) selects all elements that are next siblings of a
+      specified element.
+    </p>
+    <!-- Ex - General sibling-->
+    <h5>Ex -</h5>
+    <p>Paragraph 1.</p>
+        <span>
+            <p>Paragraph 2.</p>
+        </span>
+      <p>Paragraph 3.</p>
+      <code>Some code.</code>
+      <p>Paragraph 4.</p>
+
+    <style>
+      /* descendant */
+      .descendant p {
+        background: yellow;
+      }
+      /* child */
+      .child > p {
+        color: red;
+      }
+      /* Adjacent sibling */
+      .Adjacent + p {
+        font-style: italic;
+        background: pink;
+      }
+      /* General_sibling */
+span ~ p {
+        font-size: 25px;
+     font-weight: 900;
+        display: block;
+      }
+    </style>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius</title>
+    <style>
+        .borderimg{
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url(assets/img/border.png) 28 round;
+        }
+    </style>
+</head>
+<body>
+<h2>Border radius Property- </h2>
+<h3>We can set an image  the border around an element. border-image Property has three parts.</h3>
+    <ol>
+        <li>
+        The image to use as the border
+
+            </li>
+            <li>
+                Where to slice the image
+
+            </li>
+            <li>
+                Define whether the middle sections should be repeated or stretched
+
+        </li>
+    </ol>
+    <h5>Ex-</h5>
+    <p class="borderimg"></p>
+    <p>Here, the middle sections of the image are repeated to create the border:</p>
+    <p>Here is the original image:</p><img src="assets/img/border.png">
+</body>
+</html>

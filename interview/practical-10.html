@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <style>
+      h2 {
+        color: blue;
+        font-size: 22px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- horizontal center -->
+    <h2>horizontally center a block element (like div)</h2>
+    <div class="main">
+      <div class="center">
+        <p>Hello World!</p>
+      </div>
+      <style>
+        .main {
+          width: 500px;
+          height: 200px;
+          background: darkmagenta;
+        }
+        .center {
+          width: 70px;
+          background: darkgray;
+          padding: 10px;
+          margin: auto;
+        }
+      </style>
+    </div>
+
+    <!-- horizontal & vertically center -->
+    <h2>horizontally & vertically center by trasform property-</h2>
+    <div class="big">
+      <div class="small"></div>
+      <style>
+        .big {
+          width: 500px;
+          height: 500px;
+          background: silver;
+          position: relative;
+        }
+        .small {
+          background: blue;
+          height: 40px;
+          width: 40px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+    </div>
+    <!-- horizontal & vertically flex  -->
+    <h2>horizontally & vertically center by Flex property-</h2>
+    <div class="big1">
+      <div class="small2"></div>
+      <style>
+        .big1 {
+          width: 500px;
+          height: 500px;
+          background: darkolivegreen;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .small2 {
+          background: blue;
+          height: 40px;
+          width: 40px;
+        }
+      </style>
+      </div>
+    <!-- image center -->
+    <h2>image center</h2>
+    <div class="img_center">
+      <picture>
+        <img src="assets/img/cow.jpg" alt="" width="541" height="311" />
+      </picture>
+      <style>
+        .img_center img {
+          margin: 0 auto;
+          display: block;
+        }
+      </style>
+    </div>
+    <h2>vertically and horizontally centered Using Flexbox-</h2>
+    <!-- vertically and horizontally centered Using Flexbox -->
+    <div class="content">
+      <p>I am vertically and horizontally centered.</p>
+      
+      <style>
+        .content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 150px;
+          width: 500px;
+          background: coral;
+        }
+      </style>
+    </div>
+   
+
+  </body>
+</html>

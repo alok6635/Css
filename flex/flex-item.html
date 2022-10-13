@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-item</title>
+   
+</head>
+<body>
+  <h2>CSS Flex Items-</h2>
+   <ul>
+    <li>order</li>
+    <li>flex-grow</li>
+    <li>flex-shrink</li>
+    <li>flex-basis</li>
+    <li>flex</li>
+    <li>align-self</li>
+   </ul>
+<!--  Items -->
+  <h2>Flexible Items-</h2>
+   <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div> 
+    <div>4</div>
+  </div>
+  <!-- order  -->
+  <h2>order-</h2>
+  <div class="flex-order">
+    <div style="order: 3">1</div>
+    <div style="order: 2">2</div>
+    <div style="order: 4">3</div> 
+    <div style="order: 1">4</div>
+  </div>
+  <!-- grow -->
+  <h2>grow-</h2>
+  <div class="flex-container">
+    <div style="flex-grow: 1">1</div>
+    <div style="flex-grow: 2">2</div>
+    <div style="flex-grow: 6">3</div>
+  </div>
+
+  <!---basis  -->
+  <h2>basis-</h2>
+  <div class="basis">
+    <div>1</div>
+    <div>2</div>
+    <div class= "basicChange">3</div>
+    <div>4</div>
+  </div>
+  <!-- align-self -->
+  <h2>align-self-</h2>
+  <h3>I</h3>
+  <div class="alignSelf">
+    <div>1</div>
+    <div>2</div>
+    <div style="align-self: center">3</div>
+    <div>4</div>
+  </div>
+  <h3>II</h3>
+  <div class="alignSelf1">
+    <div>1</div>
+    <div style="align-self: flex-end">2</div>
+    <div>3</div>
+    <div style="align-self:flex-start">4</div>
+    
+  </div>
+<style>
+  
+  /* item */
+  .flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+/* order */
+.flex-order {
+  display: flex;
+  background-color: red;
+}
+.flex-order>div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+/* grow */
+.grow {
+  display: flex;
+  background-color: red;
+}
+.grow>div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* basis */
+.basis {
+  display: flex;
+  align-items: stretch;
+  background-color: pink;
+}
+.basis > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.basicChange{
+  flex-basis: 200px;
+}
+/*align Self  */
+.alignSelf {
+  display: flex;
+  height: 200px;
+  background-color: yellow;
+}
+
+.alignSelf > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  height: 75px;
+  text-align: center;
+  font-size: 30px;
+}
+.alignSelf1 {
+  display: flex;
+  height: 200px;
+  background-color: black;
+}
+
+.alignSelf1 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  height: 75px;
+  text-align: center;
+  font-size: 30px;
+}
+</style>
+
+    
+</body>
+</html>

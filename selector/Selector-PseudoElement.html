@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+/* selection */
+.selection::selection{
+  color: red;
+  background: yellow;
+}
+/* marker */
+ol ::marker{ 
+  color: red;
+  font-size: 23px;
+ 
+}
+/*  first-letter, first-line*/
+.Firstletter::first-letter{
+color: red;
+font-size: 40px;
+}
+.Firstletter::first-line{
+  color: blue;
+}
+/* after */
+      span::after {
+        position: absolute;
+        content: " ";
+        width: 177px;
+        height: 177px;
+        background: url(assets/img/emo-1.jpg);
+}
+
+    </style>
+</head>
+<body>
+  <!--  Pseudo-element -->
+<h2>Pseudo-element </h2>
+<h3>CSS pseudo-element is used to style specified parts of an element</h3>
+<ul>
+  <li>selection</li>
+  <li>marker</li>
+  <li>first-line</li>
+  <li>first-letter</li>
+    <li>after</li>
+    <li>before</li>
+   
+   
+   
+</ul>
+  <!-- selection -->
+<h2>Selection-</h2>
+selection pseudo-element matches the portion of an element that is selected by a user.
+<h3>Selection Ex-</h3>
+<div class="selection">select  content to the mouse then change color</div>
+
+<!-- Marker -->
+<h2>Marker-</h2>
+marker pseudo-element selects the markers of list items.
+<h3>Marker Ex-</h3>
+<ol>
+  <li>one item</li>
+  <li>two item</li>
+  <li>three item</li>
+</ol>
+<!-- first letter, first line -->
+<h2> First letter-</h2>
+<h3> First letter Ex-</h3>
+<p class="Firstletter">
+You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+<p>Note - 1. first-line,first letter pseudo-element can only be applied to block-level elements.</p>
+
+<!-- ::after Pseudo-element,before -->
+<h2>::before,after Pseudo-element,-</h2>
+  <h3>Ex-before,after Pseudo-element-</h3>
+<p>::after pseudo-element can be used to insert some content after the content of an element.</p>
+<p>The ::before pseudo-element inserts content before the content of an element.</p
+<div class="before">
+<span>
+  alok kumar
+</span>
+</div>
+
+
+</body>
+</html>

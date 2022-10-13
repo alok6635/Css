@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tooltip</title>
+    <style>
+      .tooltip {
+        position: relative;
+      }
+      .tooltip:hover p {
+        opacity: 1;
+      }
+      .tooltip p {
+        position: absolute;
+        background: red;
+        border-radius: 5px;
+        padding: 7px;
+        left: 71px;
+        top: -23px;
+        opacity: 0;
+        transition: opacity 3s;
+      }
+      .tooltip p::before {
+        content: "";
+        position: absolute;
+        left: -4px;
+        top: 10px;
+        width: 5px;
+        height: 10px;
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>tooltip -</h2>
+    <h3>tooltip is used to specify extra information when the user moves the mouse pointer over an element.</h3>
+    <div class="tooltip">
+      hover me
+      <p>this a para</p>
+    </div>
+  </body>
+</html>

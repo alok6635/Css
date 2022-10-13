@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform 3d</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      /* 2D, 3D rotate */
+      .twoD,
+      .threeD {
+        width: 100px;
+        height: 70px;
+        background: red;
+        border: 2px solid greenyellow;
+        margin-bottom: 10px;
+      }
+      .twoD:hover {
+        transform: rotate(360deg);
+      }
+
+      /* rotate x */
+      #rotateX {
+        width: 300px;
+        height: 100px;
+        background: yellow;
+        border: 1px solid black;
+        transform: rotateX(150deg)
+      }
+      .original{
+        width: 300px;
+        height: 100px;
+        background: yellow;
+        border: 1px solid black;
+      }
+      
+      /* rotate Y */
+      #rotateY   {
+        width: 300px;
+        height: 100px;
+        background: yellow;
+        border: 1px solid black;
+        transform: rotateY(150deg)
+      }
+     
+      /* rotate Z */
+      #rotateZ{
+        width: 300px;
+        height: 100px;
+        background: yellow;
+        border: 1px solid black;
+        transform: rotateZ(150deg)
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <h2>transform 3D method -</h2>
+    <ol>
+      <li>rotateX()</li>
+      <li>rotateY()</li>
+      <li>rotateZ()</li>
+    </ol>
+    <h2>Difference b/w 2D & 3D</h2>
+    <div class="twoD">2D rotate</div>
+    <div class="threeD">3D rotate</div>
+
+    <h2>rotateX() Method -</h2>
+    <h5>Ex-</h5>
+    <div class="original">This div element is rotated 150 degrees.</div>
+    <div id="rotateX">This div element is rotated 150 degrees.</div>
+
+    <h2>rotatey() Method -</h2>
+    <h5>Ex-</h5>
+    <div class="original">This div element is rotated 150 degrees.</div>
+    <div id="rotateY">This div element is rotated 150 degrees.</div>
+
+    <h2>rotateZ() Method -</h2>
+    <h5>Ex-</h5>
+    <div class="original">This div element is rotated 150 degrees.</div>
+    <div id="rotateZ">This div element is rotated 150 degrees.</div>
+  </body>
+</html>

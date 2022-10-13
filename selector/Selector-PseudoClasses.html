@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+   <style>
+    /* fisrt child */
+    ol li:first-child{
+      background: greenyellow;
+    }
+    ol li:last-child{
+      background: thistle;
+    }
+    ol li:nth-child(5){
+    background: yellow;
+    }
+  /* hover */
+.HoverMe:hover{
+color: gold;
+font-size: 24px;
+}
+.divHover{
+    background: black;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+.divHover:hover{
+    background: hotpink;
+}
+/* active */
+a:active{
+  color: salmon;
+}
+.tooltipHover{
+    display: none;
+    background: forestgreen;
+    padding: 10px;
+}
+.tootipDiv:hover p{
+    background: bisque;
+    display: block;
+}
+.firstchild p:first-child{
+color: blueviolet;
+}
+/*enabled, disabled */
+input[type=text]:enabled{
+background: yellowgreen;
+}
+input[type=text]:disabled{
+  background: red;
+}
+/* checked */
+input:checked{
+  height: 20px;
+  width: 20px;
+}
+/* target */
+:target {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+   </style>
+</head>
+<body>
+ <!--  Pseudo-classes -->
+<h2>Pseudo classes-  </h2>
+<h3>pseudo-class is used to define a special state of an element.<br>
+</h3>
+<ul>
+  <li>first-child</li>
+  <li>last-child</li>
+  <li>nth-child</li>
+  <li>hover</li>
+    <li>active</li>
+    <li>enabled</li>
+    <li>disabled</li>
+    <li>checked</li>
+    <li>visited</li>
+    
+    <li>target</li>
+  
+    <li>link</li>
+</ul>
+<h2>Ex-first & last & nth child</h2>
+<!-- first & last & nth child -->
+<h5>first & last & nth child </h5>
+<ol>
+  <li>para1</li>
+  <li>para2</li>
+  <li>para3</li>
+  <li>para4</li>
+  <li>para5</li>
+  <li>para6</li>
+  <li>para7</li>
+  <li>para8</li>
+  <li>para9</li>
+
+</ol>
+<!-- hover -->
+<h2>Ex-Hover - </h2>
+<h4>Hover on Link - </h4>
+    <a href="#" class="HoverMe"> css syntax</a>
+</p>
+<h3>Hover on div - </h3>
+Mouse over the div element  change its background color
+<div class="divHover">Mouse Over Me</div>
+<h2>active - </h2>
+<!-- active -->
+<a href="https://www.w3schools.com/html/">HTML</a><br>
+<a href="https://www.w3schools.com/css/">CSS</a>
+<!-- enabled ,disabled -->
+<h2>Ex-enabled,disabled - </h2>
+
+  enabled selector matches every enabled element (mostly used on form elements).<br>
+
+
+<form action="">
+  <label for="">First name:</label>
+  <input type="text" value="alok"><br>
+  disabled selector matches every disabled element (mostly used on form elements).<br>
+  <label for="">last name:</label>
+  <input type="text" value="kumar" disabled="disabled">
+</form>
+<!-- checked -->
+<h2>Ex-checked</h2>
+<form action="">
+  <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+  <input type="radio" value="female" name="gender"> Female<br>
+  <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+  <input type="checkbox" value="Car"> I have a car 
+</form>
+
+<!--Target  -->
+<h2>Target</h2>
+<p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+<a href="#news1">Jump to New content 1</a><br
+<a href="#news2">Jump to New content 2</a>
+<p id="news1"><b>New content 1...</b></p>
+<p id="news2"><b>New content 2...</b></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

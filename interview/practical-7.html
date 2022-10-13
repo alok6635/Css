@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <style>
+        h2{
+            color: blue;
+            font-size: 18px;;
+        }
+        .img2{
+            opacity: 0.1;
+        }
+        .imCow{
+            position: absolute;
+            left: 0;
+            z-index: -1;
+        }
+        .indexCover{
+            position: relative;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    
+    
+    <h2>
+    I have a img and i want to blur this img?</h2>
+    <h3>
+     Ans-   opacity 
+     </h3>
+         <!-- Example -->
+     <img src="assets/img/pic_trulli.jpg" class="img2" alt="">
+     <!-- next -->
+     <h2>
+        I have a two imges use the z-index-</h2>
+     </h2>
+       <!-- Example -->
+       <div class="indexCover">
+        <h4>without Z-index img</h4>
+<img src="assets/img/Img-2.jpg" alt="" width="311" height="162">
+<img src="assets/img/cow.jpg" alt=""  width="311" height="162"><br>
+<h4>with Z-index img</h4>
+ <img src="assets/img/Img-2.jpg" alt="" width="311" height="162">
+ <img src="assets/img/cow.jpg" alt="" class="imCow" width="311" height="162">
+    
+</div>
+  
+</body>
+</html>

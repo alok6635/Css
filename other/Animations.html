@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+    
+
+/* The element to apply the animation to */
+.div1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  margin-bottom: 20px;
+   
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: magenta;}
+}
+
+/* move four direction */
+        .div2{
+            width: 100px;
+            height: 100px;
+            background: black;
+            animation-name: Mydemo;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+             position: relative;
+        }
+@keyframes Mydemo {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:500px; top:0px;}
+  50%  {background-color:blue; left:400px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+    </style>
+</head>
+<body>
+    <h2>CSS Animations</h2>
+    <h3>An  animation is gradually change from the current style to the new style at certain times.</h3>
+    <h3>@keyframes Rule</h3>
+   <ol>
+
+  
+   <li>
+animation-name
+
+   </li>
+   <li>
+    animation-duration
+
+   </li>
+   <li>
+    animation-delay
+
+   </li>
+  
+   <li>
+    animation-direction
+
+   </li>
+   <li>
+animation-timing-function
+
+   </li>
+   <li>
+animation-fill-mode
+
+   </li>
+   <li>
+    animation-iteration-count
+
+   </li>
+</ol>
+<h5>Ex-</h5>
+<div class="div1"></div>
+<div class="div2"></div>
+</body>
+</html>
